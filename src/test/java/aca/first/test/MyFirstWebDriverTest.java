@@ -22,15 +22,20 @@ public class MyFirstWebDriverTest {
 		 WebElement click = driver.findElement(By.id("search-btn"));
 		 click.click();
 		 //3.Open the page by searching Git tutorial
-		 Assert.assertTrue("Git tutorial for beginners" !=null);
-		 //7.Open the first video of the loaded page.
-		 WebElement firstvideo = driver.findElement(By.xpath("//ol[@class='item-section']//a[2]"));
+		 Assert.assertTrue("Learn Git in 20 Minutes" !=null);
+		//4.Open the first video of the loaded page.
+		 WebElement firstvideo = driver.findElement(By.xpath(".//ol[@div class='yt-lockup yt-lockup-tile yt-lockup-video clearfix'//a[2]"));
 		 firstvideo.click();
-		 Assert.assertTrue(driver.findElement(By.id("watch-headline-title" !=null)));
+		 //xndiry estex e,chi bacum videon
+	
 		
-		 
-		 
-		 
+		 //1.Open Youtube menu 
+		 WebElement homepage = driver.findElement(By.id("appbar-guide-button"));
+		 homepage.click();
+		 //2.Go to watched videos
+		 WebElement watched = driver.findElement(By.id(".//li[@id='history-guide-item']"));
+		 watched.click();	
+		
 		 
 	
 	}
